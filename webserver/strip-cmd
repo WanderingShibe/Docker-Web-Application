@@ -1,0 +1,13 @@
+#!/bin/bash
+
+./strip-image  \
+  -i u2096386/csvs2021-web_i \
+  -d Dockerfile \
+  -p ngix \
+  -p php \
+  -p php-mysqlnd \
+  -p php-fpm \
+  -d Dockerfile \
+  -t test/stripped-webserver_i
+
+  #Working maybe??????
